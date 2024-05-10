@@ -1,11 +1,9 @@
-- name: variables checks
-  hosts: localhost
+- name: variables check
+  hosts: local host
   vars:
     URL: www.google.com
 
   tasks:
     - name: calling URL
       ansible.builtin.debug:
-        msg: url is {{ URL }}
-
-
+        msg: URL is -> {{ URL }}
