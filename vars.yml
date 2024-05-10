@@ -8,3 +8,5 @@
     - name: calling variables
       ansible.builtin.debug:
         msg: url is -> {{ url }}
+           : message is success
+
