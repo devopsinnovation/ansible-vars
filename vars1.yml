@@ -1,5 +1,7 @@
 - name: variables
   hosts: localhost
+  vars_files:
+    - vars.yml
   vars:
     URL: aditya.google.com
   tasks:
@@ -12,3 +14,8 @@
         msg: Fruit name is - {{ FRUIT }}
       vars:
         FRUIT: apple
+
+    - name: Print project Name
+      ansible.builtin.debug:
+        msg: Project name is {{ PROJECT_NAME }}
+

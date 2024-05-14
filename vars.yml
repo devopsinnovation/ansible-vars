@@ -1,12 +1,1 @@
-- name: working with variables
-  hosts: localhost
-  become: true
-  vars:
-    url: www.google.com
-
-  tasks:
-    - name: calling variables
-      ansible.builtin.debug:
-        msg: url is -> {{ url }}
-           : message is success
-
+PROJECT_NAME: ADITYA SOLUTIONS
