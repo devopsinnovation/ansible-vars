@@ -11,6 +11,7 @@
     - name: print course
       ansible.builtin.debug:
         msg: Course name is {{ item["course_name"] }} and course duration is {{ item["course_duration"] }}
+      when: item["course_name"] == "Devops"
       loop:
         - { course_name: 'Devops', course_duration: 3 }
         - { course_name: 'Ansible', course_duration: 2 }
