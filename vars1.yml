@@ -20,7 +20,7 @@
 
     - name: Print project Name
       ansible.builtin.debug:
-        msg: this is a good project {{ PROJECT_NAME }}
+        msg: "{{ PROJECT_NAME }}"
       vars:
           PROJECT_NAME: Ansible
 
@@ -44,13 +44,3 @@
           key3: banana
           key4: grapes
 
-#we can access the variables using single or  double quotes.
-    - name: list of fruits using map and list at variables
-      ansible.builtin.debug:
-        msg: List of fruits is {{ FRUITS_MAP['key1'] }}
-      vars:
-        FRUITS_MAP:
-          key1: '{{ FRUITS[0] }}'
-          key2: '{{ FRUITS[1] }}'
-          key3: '{{ FRUITS[2] }}'
-          key4: '{{ FRUITS[3] }}'
