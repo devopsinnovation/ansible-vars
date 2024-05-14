@@ -22,3 +22,5 @@
     - name: Print
       ansible.builtin.debug:
         msg: Course name is {{ Course_name }}
+      vars:
+        Course_name: English
