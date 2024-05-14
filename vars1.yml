@@ -28,3 +28,13 @@
           - orange
           - banana
           - grapes
+
+    - name: list of fruits using map
+      ansible.builtin.debug:
+        msg: List of fruits is {{ FRUITS_MAP['key1'] }}
+      vars:
+        FRUITS_MAP:
+          key1: apple
+          key2: orange
+          key3: banana
+          key4: grapes
