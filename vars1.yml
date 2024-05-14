@@ -4,6 +4,9 @@
     - vars.yml
   vars:
     URL: aditya.google.com
+    STRING: aditya
+    BOOL: true
+    NUMBER: 1
   tasks:
     - name: Print url
       ansible.builtin.debug:
