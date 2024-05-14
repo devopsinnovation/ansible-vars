@@ -4,9 +4,9 @@
     - name: Welcome to Devops class
       ansible.builtin.debug:
         msg: Welcome to Devops class
-        when: course_name == 'Devops'
+      when: course_name == 'Devops'
 
     - name: Welcome to Ansible class
       ansible.builtin.debug:
         msg: Welcome to Ansible class
-        when: course_name == 'Ansible'
+      when: course_name == 'Ansible'
