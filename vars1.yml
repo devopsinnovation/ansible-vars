@@ -20,7 +20,7 @@
 
     - name: Print project Name
       ansible.builtin.debug:
-        msg: Project name is {{ PROJECT_NAME }}
+        msg: {{ PROJECT_NAME }} is a good project
 
     - name: list of fruits
       ansible.builtin.debug:
