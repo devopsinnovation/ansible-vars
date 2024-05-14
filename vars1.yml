@@ -19,3 +19,6 @@
       ansible.builtin.debug:
         msg: Project name is {{ PROJECT_NAME }}
 
+    - name: Print
+      ansible.builtin.debug:
+        msg: Course name is {{ Course_name }}
