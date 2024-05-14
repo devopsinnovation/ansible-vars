@@ -20,7 +20,7 @@
 
     - name: Print project Name
       ansible.builtin.debug:
-        msg: "{{ PROJECT_NAME }}"
+        msg: "{{ PROJECT_NAME }} is the new project name"
       vars:
           PROJECT_NAME: Ansible
 
