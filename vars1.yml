@@ -11,7 +11,4 @@
       ansible.builtin.debug:
         msg: Fruit name is - {{ FRUIT }}
       vars:
-        FRUIT:
-          - apple
-          - pineapple
-          - orange
+        FRUIT: apple
