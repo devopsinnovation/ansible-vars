@@ -45,11 +45,10 @@
           key4: grapes
 
     - name: Execute shell command
-      ansible.builtin.shell:
-        cmd: uptime
-        register: cmd_result
+      ansible.builtin.shell: uptime
+      register: cmd_result
 
     - name: Print output
       ansible.builtin.debug:
-        msg: "{{ cmd_result.stdout }}"
+        msg: "{{ cmd_result }}"
 
