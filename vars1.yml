@@ -19,8 +19,8 @@
       ansible.builtin.debug:
         msg: Project name is {{ PROJECT_NAME }}
 
-    - name: Print
+    - name: list of fruits
       ansible.builtin.debug:
-        msg: Course name is {{ Course_name }}
+        msg: List of fruits is {{ FRUITS[0] }}
       vars:
-        Course_name: English
+        FRUITS: [apple, banana, orange]
