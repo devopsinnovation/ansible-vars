@@ -48,5 +48,5 @@
       ansible.builtin.shell:
         cmd: uptime
         register: cmd_result
-        msg: {{ cmd_result.stdout }}
+        msg: "{{ cmd_result.stdout }}"
 
