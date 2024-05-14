@@ -1,0 +1,11 @@
+- name: Error Handling
+  hosts: localhost
+  tasks:
+    - name: Error Handling
+      ansible.builtin.shell: id expense
+      register: result
+      ignore_errors: true
+
+    - name: Error Handling
+      ansible.builtin.debug:
+        msg: "{{ result }}"
