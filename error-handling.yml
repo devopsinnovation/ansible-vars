@@ -2,7 +2,7 @@
   hosts: localhost
   tasks:
     - name: Error Handling
-      ansible.builtin.shell: id expense
+      ansible.builtin.shell: id expenses
       register: result
       ignore_errors: true
 
