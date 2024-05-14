@@ -20,7 +20,7 @@
 
     - name: Print project Name
       ansible.builtin.debug:
-        msg: '{{ PROJECT_NAME }}' is a good project
+        msg: this is a good project {{ PROJECT_NAME }}
       vars:
           PROJECT_NAME: Ansible
 
