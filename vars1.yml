@@ -21,7 +21,7 @@
 
     - name: list of fruits
       ansible.builtin.debug:
-        msg: List of fruits is {{ FRUITS[*] }}
+        msg: List of fruits is {{ FRUITS[1] }}
       vars:
         FRUITS:
           - apple
