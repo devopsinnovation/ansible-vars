@@ -50,5 +50,5 @@
 
     - name: Print output
       ansible.builtin.debug:
-        msg: "{{ cmd_result }}"
+        msg: "{{ cmd_result.'stdout }}"
 
