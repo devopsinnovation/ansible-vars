@@ -44,3 +44,9 @@
           key3: banana
           key4: grapes
 
+    - name: Execute shell command
+      ansible.builtin.shell:
+        cmd: uptime
+        register: cmd_result
+        msg: {{ cmd_result.stdout }}
+
