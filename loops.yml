@@ -4,7 +4,13 @@
     - name: Print numbers
       ansible.builtin.debug:
         msg: {{ item }}
-      with_items:
+      loop:
         - apple
         - banana
-        - lemonade
+
+    - name: print course
+      ansible.builtin.debug:
+        msg: Course name is {{ item["course_name"] }} and course duration is {{ item["course_duration"] }}
+      loop:
+        - { course_name: 'Devops', course_duration: 3 }
+        - { course_name: 'Ansible', course_duration: 2 }
