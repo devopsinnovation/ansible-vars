@@ -3,7 +3,7 @@
   tasks:
     - name: Print numbers
       ansible.builtin.debug:
-        msg: {{ item }}
+        msg: " {{ item }} "
       loop:
         - apple
         - banana
